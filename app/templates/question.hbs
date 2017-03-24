@@ -1,2 +1,10 @@
 <h2>More information about {{model.author}}'s {{model.date}}</h2>
 {{question-detail question=model update="update"}}
+{{new-answer saveAnswer="saveAnswer" question=model}}
+
+
+<ul>
+  {{#each model.answers as |review|}}
+    <li>{{answer.content}} By: {{answer.author}}</li>
+  {{/each}}
+</ul>

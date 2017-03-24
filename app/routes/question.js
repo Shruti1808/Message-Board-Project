@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     return this.store.findRecord('question', params.question_id);
   },
 
- // Let the route handler add the new question to the Ember Data store and then save it.
+  // Let the route handler add the new question to the Ember Data store and then save it.
   actions: {
     update(question, params) {
       Object.keys(params).forEach(function(key){
@@ -14,7 +14,17 @@ export default Ember.Route.extend({
         }
       });
       question.save();
-      this.transitionTo('question');//move to question route
+      this.transitionTo('index');
     },
+
+    saveAnswer(params) {
+      var newAnswer = this.store.createRecord('answer', params);
+      var question = params.question;
+      question.get('answers').addObject(newAnswer);
+      newAnswer.save().then(function() {
+        return question.save();
+      });
+      this.transitionTo('question', question);
+    }
   }
 });
