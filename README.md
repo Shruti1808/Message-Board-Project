@@ -3,6 +3,33 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
+## Description
+This app yields a question and answer message board where a user submits a question and other users can respond with answers.
+<!-- Additional features include temporary storage of a user's favorited questions, an up-voting (and down-voting) system for answers, and a filter for hiding answers with very poor ratings. -->
+
+## User Stories
+
+* Questions have the content of the question itself, an author and additional notes.
+
+* Answers have the content of the answer and the author.
+
+* A header and navbar appear on all pages containing the name of your site and a link to the home page.
+
+* A list of all questions appears on the homepage, with only the question and the name of the author showing.
+
+* Users can click on a question to view additional information.
+
+* Users can add and edit questions.
+
+* Users can add answers to a question. Answers are added and viewed on the same page as the question they respond to.
+
+<!-- * Users can upvote the answer they think is best, and answers are sorted by number of upvotes.
+
+* Question tiles display the number of associated answers with a computed property.
+
+* Users can create lists of favorite questions (and their answers) to reference later.
+
+* Special icons are used for favorited questions and poorly rated answers. -->
 
 
 ## Prerequisites
