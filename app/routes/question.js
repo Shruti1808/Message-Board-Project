@@ -15,6 +15,6 @@ export default Ember.Route.extend({
       });
       question.save();
       this.transitionTo('question');//move to question route
-    },
+    }
   }
 });
