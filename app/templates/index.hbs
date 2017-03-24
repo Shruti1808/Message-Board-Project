@@ -1,2 +1,11 @@
+<h1> Welcome to Quora </h1>
+<p>We hope you find answers to the questions that you're looking for.Got a question? Just ask! Got an answer? Click on a question below!</p>
+<div class ="questions-list">
+<ul>
+  {{#each model as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</ul>
+</div>
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
