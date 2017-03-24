@@ -1,2 +1,22 @@
 
-{{outlet}}
+<div class="container">
+  <header>
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+
+          <li>{{#link-to 'index'}}Quora{{/link-to}}</li>
+
+
+          <li class="pull-right">{{#link-to 'about'}}About{{/link-to}}</li>
+          <li class="pull-right">{{#link-to 'contact'}}Contact{{/link-to}}</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+  {{outlet}}
+</div>
