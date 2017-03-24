@@ -1,0 +1,20 @@
+{ "questions": [{
+    "content": "How do I boil an egg?",
+    "author": "eggluv202",
+    "date": "02-01-2017",
+    "additionalNotes": "I have three eggs that I want to boil. Preferably hard boil. My dream is to make a chef's salad because that will mean I am a chef. Please help me achieve my dream!",
+    "tag": "cooking"
+  }, {
+    "content": "What are some dressing hacks everyone should know?",
+    "author": "fashnweathr88",
+    "date":"05-02-2016",
+    "additionalNotes":"What Is The Occasion OR Where Are You Heading.Know The Formality Of The Occasion.Take Clues From The Hem Of Your Shirt.Length Matters",
+    "tag": "fashion"
+  }, {
+    "content": "How many pineapples should I eat in one sitting?",
+    "author": "citrusfruit4lyfe",
+    "date": "03-22-2017"
+    "additionalNotes": "I love to eat pineapple but I'm worried I might be eating too much of it. How much is acceptable? Can I eat two during a 30 minute episode of my favorite sitcom? Will this ruin my insides???",
+    "tag": "nutrition"
+  }]
+}
