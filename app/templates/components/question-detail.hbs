@@ -1,1 +1,21 @@
-{{yield}}
+<div class="question-wrapper">
+  <div class="top-heading">
+    <h2>My Questions</h2>
+    <div class="question-header">
+      <h3>{{question.content}}</h3>
+      <span class="byline">Asked by:<em> {{question.author}}</em> on: {{question.date}}</span>
+    </div>
+    <div class="additional-notes">
+      <h4>Notes:</h4>
+      {{question.additionalNotes}}
+    </div>
+    <div class="tag">
+      <h4>Tags:</h4>
+      {{question.tag}}
+    </div>
+  </div>
+</div>
+
+<div class="update-question">
+  {{update-question question=model update="update"}}
+</div>
