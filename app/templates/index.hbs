@@ -3,13 +3,13 @@
 <div class ="questions-list">
 <ul>
   {{#each model as |question|}}
-    {{question-tile question=question}}
+    {{question-tile question=question update="update"}}
   {{/each}}
 </ul>
 </div>
 
 <!-- //Save a new question -->
-{{new-question saveQuestion2="saveQuestion3"}}    
+{{new-question saveQuestion2="saveQuestion3"}}
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
