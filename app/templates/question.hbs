@@ -1,10 +1,13 @@
-<h2>More information about {{model.author}}'s {{model.date}}</h2>
-{{question-detail question=model update="update"}}
-{{new-answer saveAnswer="saveAnswer" question=model}}
 
+<div class="question-box">
+  {{question-detail question=model}}
+</div>
 
-<ul>
-  {{#each model.answers as |review|}}
-    <li>{{answer.content}} By: {{answer.author}}</li>
-  {{/each}}
-</ul>
+<div class="buttons">
+  <div class="col-md-6">
+  </div>
+  {{update-question question=model update="update"}}
+</div>
+<div class="col-md-6">
+  {{new-answer saveAnswer="saveAnswer" question=model}}
+</div>

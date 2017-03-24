@@ -22,10 +22,10 @@
         <label for="tags">Tag</label>
           {{input value=question.tag id="tag" placeholder=question.tag}}
       </div>
-      <button class="question-btn-save" {{action 'update' question}}>Save</button>
-      <button class="question-btn-close" {{action 'questionFormHide'}}> Close X</button>
+      <button class="btn btn-success" {{action 'update' question}}>Save</button>
+      <button class="btn btn-success" {{action 'questionFormHide'}}> Close X</button>
     </form>
   </div>
 {{else}}
-  <button class="question-btn" {{action 'showQuestionForm'}}>Edit Question</button>
+  <button class="btn btn-success" {{action 'updateQuestionForm'}}>Update</button>
 {{/if}}

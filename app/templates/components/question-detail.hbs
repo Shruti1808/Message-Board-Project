@@ -17,5 +17,14 @@
 </div>
 
 <div class="update-question">
-  {{update-question question=model update="update"}}
+  {{update-question question=question update="update"}}
+</div>
+
+<div class="answers-wrapper">
+  <p>Answers:</p>
+  <ul>
+    {{#each question.answers as |answer|}}
+    <li><h4>{{answer.content}} By: {{answer.author}}</h4></li>
+    {{/each}}
+  </ul>
 </div>
